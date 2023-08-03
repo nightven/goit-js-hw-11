@@ -1,0 +1,39 @@
+@import './common';
+@import './example';
+
+.container {
+  margin: 0 auto;
+  padding: 6px;
+  width: 1300;
+}
+img {
+  max-width: 100%;
+}
+.search-form {
+    
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.photo-card {
+  flex-basis: calc((100% - 48px) / 3);
+  padding: 6px;
+
+  background-color: beige;
+  border: black solid 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(18, 18, 16, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(18, 18, 16, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(18, 18, 16, 0.75);
+  transition: transform 300ms;
+  &:hover,
+  :focus {
+    transform: scale(1.1);
+  }
+}
