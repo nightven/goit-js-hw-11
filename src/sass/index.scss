@@ -1,7 +1,16 @@
 @import './common';
 @import './example';
 
+body{
+  background: rgba(106, 134, 138, 0.7);
+  
+}
+
+
+
 .container {
+  
+  
   margin: 0 auto;
   padding: 6px;
   width: 1300;
@@ -10,15 +19,17 @@ img {
   max-width: 100%;
 }
 .search-form {
-    
-    display: flex;
-    justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 30px;
 }
 .gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 30px;
 }
 .photo-card {
   flex-basis: calc((100% - 48px) / 3);
@@ -36,4 +47,30 @@ align-items: center;
   :focus {
     transform: scale(1.1);
   }
+}
+
+.load-more {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+button {
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: beige;
+}
+input {
+  width: 500px;
+  padding: 8px;
+}
+.js-span {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 30px;
+  color: red;
+  font-size: 36px;
+  font-weight: 500;
+  text-shadow: rgb(4, 4, 4) 1px 0 10px;
 }
